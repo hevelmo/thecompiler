@@ -34,5 +34,6 @@ $(document).ready(function() {
     $('body').on('click', '#main-compiler-camcar-v2 form', compiler_phpobjectjs_method.proCamcarV2Sitio);
     $('body').on('click', '#main-compiler-camcar-v2-intranet form', compiler_phpobjectjs_method.proCamcarV2Intranet);
     $('body').on('click', '#main-compiler-camcar-v2-admin form', compiler_phpobjectjs_method.proCamcarV2Admin);
+    $('body').on('click', '#main-compiler-eurolimpio form', compiler_phpobjectjs_method.proEuroLimpio);
 
 });
