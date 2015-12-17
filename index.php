@@ -19,7 +19,7 @@
 		<title>The Compiler</title>
 
         <link href="css/import.css" rel="stylesheet" type="text/css" />
-        
+
         <link rel="shortcut icon" href="img/ico/thecompiler.ico">
 
         <script>
@@ -57,7 +57,7 @@
         </script>
 	</head>
 	<body>
-        
+
         <label for="">Camcar v1 Sitio</label>
         <div id="main-compiler-camcar-v1-sitio">
             <form name="form-compiler" method="post" accept-charset="utf-8">
@@ -103,6 +103,14 @@
             <form name="form-compiler" method="post" accept-charset="utf-8">
                 <input type="hidden" name="execute_site_camcar_v2_admin" value="execute">
                 <input type="submit" name="execute_site_camcar_v2_admin" id="compilerCamcar_v2_admin" value="Compilar">
+            </form>
+        </div>
+        <br>
+        <label for="">Euro Limpio</label>
+        <div id="main-compiler-eurolimpio">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_eurolimpio" value="execute">
+                <input type="submit" name="execute_site_eurolimpio" id="compilerEurolimpio" value="Compilar">
             </form>
         </div>
 
