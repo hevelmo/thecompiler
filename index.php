@@ -113,6 +113,14 @@
                 <input type="submit" name="execute_site_eurolimpio" id="compilerEurolimpio" value="Compilar">
             </form>
         </div>
+        <br>
+        <label for="">Tamizgen</label>
+        <div id="main-compiler-tamizgen">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_tamizgen" value="execute">
+                <input type="submit" name="execute_site_tamizgen" id="compilerTamizgen" value="Compilar">
+            </form>
+        </div>
 
 		<!-- Auxiliar Temporal Inputs's DIV -->
     	<div id='hidden-inputs-session'></div>

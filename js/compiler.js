@@ -3,7 +3,7 @@
 \* ------------------------------------------------------ */
     var compilerCamcar_v1_sitio, compilerCamcar_v1_intranet, compilerCamcar_v1_admin,
         compilerCamcar_v2_sitio, compilerCamcar_v2_intranet, compilerCamcar_v2_admin,
-        compilerEurolimpio, ihidden;
+        compilerEurolimpio, compilerTamizgen, ihidden;
     compilerCamcar_v1_sitio = '../camcar/sitio/phpobjectjs/';
     compilerCamcar_v1_intranet = '../camcar/intranet/phpobjectjs/';
     compilerCamcar_v1_admin = '../camcar/intranet/admin/phpobjectjs/';
@@ -11,6 +11,7 @@
     compilerCamcar_v2_intranet = '../camcar-v2.0/intranet/phpobjectjs/';
     compilerCamcar_v2_admin = '../camcar-v2.0/intranet/admin/phpobjectjs/';
     compilerEurolimpio = '../eurolimpio/phpobjectjs/';
+    compilerTamizgen = '../tamizgen/phpobjectjs/';
     var compiler_phpobjectjs_method = {
         proCamcarV1Sitio: function(event) {
             event.preventDefault();
@@ -145,6 +146,26 @@
             COR.appendMulti('#compiler', dataProEurolimpioAttributes);
             $.ajax({
                 url: compilerEurolimpio,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proTamizgen: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-tamizgen', dataProjects);
+            dataProTamizgenAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProTamizgenAttributes);
+            $.ajax({
+                url: compilerTamizgen,
                 type: 'post',
                 data: {ihidden: ihidden},
                 beforeSend: compiler_phpobjectjs_method.funcBeforeSend
