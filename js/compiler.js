@@ -28,7 +28,7 @@
                 url: compilerCamcar_v1_sitio,
                 type: 'post',
                 data: {ihidden: ihidden},
-                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
             })
             .done(compiler_phpobjectjs_method.funcDone)
             .always(compiler_phpobjectjs_method.funcAlways)
@@ -48,7 +48,7 @@
                 url: compilerCamcar_v1_intranet,
                 type: 'post',
                 data: {ihidden: ihidden},
-                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
             })
             .done(compiler_phpobjectjs_method.funcDone)
             .always(compiler_phpobjectjs_method.funcAlways)
@@ -68,7 +68,7 @@
                 url: compilerCamcar_v1_admin,
                 type: 'post',
                 data: {ihidden: ihidden},
-                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
             })
             .done(compiler_phpobjectjs_method.funcDone)
             .always(compiler_phpobjectjs_method.funcAlways)
@@ -88,7 +88,7 @@
                 url: compilerCamcar_v2_sitio,
                 type: 'post',
                 data: {ihidden: ihidden},
-                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
             })
             .done(compiler_phpobjectjs_method.funcDone)
             .always(compiler_phpobjectjs_method.funcAlways)
@@ -108,7 +108,7 @@
                 url: compilerCamcar_v2_intranet,
                 type: 'post',
                 data: {ihidden: ihidden},
-                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
             })
             .done(compiler_phpobjectjs_method.funcDone)
             .always(compiler_phpobjectjs_method.funcAlways)
@@ -128,7 +128,7 @@
                 url: compilerCamcar_v2_admin,
                 type: 'post',
                 data: {ihidden: ihidden},
-                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
             })
             .done(compiler_phpobjectjs_method.funcDone)
             .always(compiler_phpobjectjs_method.funcAlways)
@@ -148,7 +148,7 @@
                 url: compilerEurolimpio,
                 type: 'post',
                 data: {ihidden: ihidden},
-                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
             })
             .done(compiler_phpobjectjs_method.funcDone)
             .always(compiler_phpobjectjs_method.funcAlways)
@@ -168,7 +168,7 @@
                 url: compilerTamizgen,
                 type: 'post',
                 data: {ihidden: ihidden},
-                beforeSend: compiler_phpobjectjs_method.funcBeforeSend
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
             })
             .done(compiler_phpobjectjs_method.funcDone)
             .always(compiler_phpobjectjs_method.funcAlways)
