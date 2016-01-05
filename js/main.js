@@ -36,5 +36,10 @@ $(document).ready(function() {
     $('body').on('click', '#main-compiler-camcar-v2-admin form', compiler_phpobjectjs_method.proCamcarV2Admin);
     $('body').on('click', '#main-compiler-eurolimpio form', compiler_phpobjectjs_method.proEuroLimpio);
     $('body').on('click', '#main-compiler-tamizgen form', compiler_phpobjectjs_method.proTamizgen);
+    $('body').on('click', '#main-compiler-sukgdl form', compiler_phpobjectjs_method.proSukGdl);
+    $('body').on('click', '#main-compiler-sukvallarta form', compiler_phpobjectjs_method.proSukVallarta);
+    $('body').on('click', '#main-compiler-suklm form', compiler_phpobjectjs_method.proSukLm);
+    $('body').on('click', '#main-compiler-sukcolima form', compiler_phpobjectjs_method.proSukColima);
+    $('body').on('click', '#main-compiler-sukmorelia form', compiler_phpobjectjs_method.proSukMorelia);
 
 });

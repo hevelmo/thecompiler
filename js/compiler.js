@@ -3,7 +3,8 @@
 \* ------------------------------------------------------ */
     var compilerCamcar_v1_sitio, compilerCamcar_v1_intranet, compilerCamcar_v1_admin,
         compilerCamcar_v2_sitio, compilerCamcar_v2_intranet, compilerCamcar_v2_admin,
-        compilerEurolimpio, compilerTamizgen, ihidden;
+        compilerEurolimpio, compilerTamizgen,
+        compilerSukGdl, compilerSukVallarta, compilerSukLm, compilerSukColima, compilerSukMorelia, ihidden;
     compilerCamcar_v1_sitio = '../camcar/sitio/phpobjectjs/';
     compilerCamcar_v1_intranet = '../camcar/intranet/phpobjectjs/';
     compilerCamcar_v1_admin = '../camcar/intranet/admin/phpobjectjs/';
@@ -12,6 +13,11 @@
     compilerCamcar_v2_admin = '../camcar-v2.0/intranet/admin/phpobjectjs/';
     compilerEurolimpio = '../eurolimpio/phpobjectjs/';
     compilerTamizgen = '../tamizgen/phpobjectjs/';
+    compilerSukGdl = '../suzuki/suzuki-gdl-new/phpobjectjs/';
+    compilerSukVallarta = '../suzuki/suzuki-vallarta-new/phpobjectjs/';
+    compilerSukLm = '../suzuki/suzuki-lopez-mateos-new/phpobjectjs/';
+    compilerSukColima = '../suzuki/suzuki-colima-new/phpobjectjs/';
+    compilerSukMorelia = '../suzuki/suzuki-morelia-new/phpobjectjs/';
     var compiler_phpobjectjs_method = {
         proCamcarV1Sitio: function(event) {
             event.preventDefault();
@@ -166,6 +172,106 @@
             COR.appendMulti('#compiler', dataProTamizgenAttributes);
             $.ajax({
                 url: compilerTamizgen,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proSukGdl: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-sukgdl', dataProjects);
+            dataProSukGdlAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProSukGdlAttributes);
+            $.ajax({
+                url: compilerSukGdl,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proSukVallarta: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-sukvallarta', dataProjects);
+            dataProSukVallartaAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProSukVallartaAttributes);
+            $.ajax({
+                url: compilerSukVallarta,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proSukLm: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-suklm', dataProjects);
+            dataProSukLmAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProSukLmAttributes);
+            $.ajax({
+                url: compilerSukLm,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proSukColima: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-sukcolima', dataProjects);
+            dataProSukColimaAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProSukColimaAttributes);
+            $.ajax({
+                url: compilerSukColima,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proSukMorelia: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-sukmorelia', dataProjects);
+            dataProSukMoreliaAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProSukMoreliaAttributes);
+            $.ajax({
+                url: compilerSukMorelia,
                 type: 'post',
                 data: {ihidden: ihidden},
                 beforeSend: compiler_phpobjectjs_method.funcBeforeSend()

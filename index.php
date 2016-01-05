@@ -121,6 +121,46 @@
                 <input type="submit" name="execute_site_tamizgen" id="compilerTamizgen" value="Compilar">
             </form>
         </div>
+        <br>
+        <label for="">Suzuki GDL</label>
+        <div id="main-compiler-sukgdl">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_sukgdl" value="execute">
+                <input type="submit" name="execute_site_sukgdl" id="compilerSukGdl" value="Compilar">
+            </form>
+        </div>
+        <br>
+        <label for="">Suzuki Vallarta</label>
+        <div id="main-compiler-sukvallarta">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_sukvallarta" value="execute">
+                <input type="submit" name="execute_site_sukvallarta" id="compilerSukVallarta" value="Compilar">
+            </form>
+        </div>
+        <br>
+        <label for="">Suzuki López Mateos</label>
+        <div id="main-compiler-suklm">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_suklm" value="execute">
+                <input type="submit" name="execute_site_suklm" id="compilerSukLm" value="Compilar">
+            </form>
+        </div>
+        <br>
+        <label for="">Suzuki Colima</label>
+        <div id="main-compiler-sukcolima">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_sukcolima" value="execute">
+                <input type="submit" name="execute_site_sukcolima" id="compilerSukColima" value="Compilar">
+            </form>
+        </div>
+        <br>
+        <label for="">Suzuki Morelia</label>
+        <div id="main-compiler-sukmorelia">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_sukmorelia" value="execute">
+                <input type="submit" name="execute_site_sukmorelia" id="compilerSukMorelia" value="Compilar">
+            </form>
+        </div>
 
 		<!-- Auxiliar Temporal Inputs's DIV -->
     	<div id='hidden-inputs-session'></div>
