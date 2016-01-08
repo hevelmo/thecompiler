@@ -399,13 +399,13 @@
             var nameproject;
             nameproject = projectsData.name;
             $('#label-name-project').html(nameproject);
-            COR.loadTemplate(tempsNames.app_thecompiler, domEl._main_compiler_app_name);
+            COM.loadTemplate(tempsNames.app_thecompiler, domEl._main_compiler_app_name);
         },
         recurrentSecionHome: function() {
             dataMainCompilerProjectsAttributes = [
                 ['div', {'id':domEl._main_compiler_app, 'class':''}, '', 1]
             ];
-            COR.appendMulti(domEl.div_recurrent, dataMainCompilerProjectsAttributes);
+            COM.appendMulti(domEl.div_recurrent, dataMainCompilerProjectsAttributes);
         },
         viewSectionHome: function() {
             viewSectionHomeMethod.recurrentSecionHome();

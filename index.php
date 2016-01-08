@@ -161,6 +161,38 @@
                 <input type="submit" name="execute_site_sukmorelia" id="compilerSukMorelia" value="Compilar">
             </form>
         </div>
+        <br>
+        <label for="">Land Rover</label>
+        <div id="main-compiler-landrover">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_landrover" value="execute">
+                <input type="submit" name="execute_site_landrover" id="compilerLandRover" value="Compilar">
+            </form>
+        </div>
+        <br>
+        <label for="">Land Rover V2</label>
+        <div id="main-compiler-landrover-v2">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_landrover-v2" value="execute">
+                <input type="submit" name="execute_site_landrover-v2" id="compilerLandRoverV2" value="Compilar">
+            </form>
+        </div>
+        <br>
+        <label for="">Jaguar</label>
+        <div id="main-compiler-jaguar">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_jaguar" value="execute">
+                <input type="submit" name="execute_site_jaguar" id="compilerJaguar" value="Compilar">
+            </form>
+        </div>
+        <br>
+        <label for="">Jaguar V2</label>
+        <div id="main-compiler-jaguar-v2">
+            <form name="form-compiler" method="post" accept-charset="utf-8">
+                <input type="hidden" name="execute_site_jaguar-v2" value="execute">
+                <input type="submit" name="execute_site_jaguar-v2" id="compilerJaguarV2" value="Compilar">
+            </form>
+        </div>
 
 		<!-- Auxiliar Temporal Inputs's DIV -->
     	<div id='hidden-inputs-session'></div>

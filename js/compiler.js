@@ -4,7 +4,9 @@
     var compilerCamcar_v1_sitio, compilerCamcar_v1_intranet, compilerCamcar_v1_admin,
         compilerCamcar_v2_sitio, compilerCamcar_v2_intranet, compilerCamcar_v2_admin,
         compilerEurolimpio, compilerTamizgen,
-        compilerSukGdl, compilerSukVallarta, compilerSukLm, compilerSukColima, compilerSukMorelia, ihidden;
+        compilerSukGdl, compilerSukVallarta, compilerSukLm, compilerSukColima, compilerSukMorelia,
+        compilerLDR, compilerLDRv2, compilerJaguar, compilerJaguarv2,
+        ihidden;
     compilerCamcar_v1_sitio = '../camcar/sitio/phpobjectjs/';
     compilerCamcar_v1_intranet = '../camcar/intranet/phpobjectjs/';
     compilerCamcar_v1_admin = '../camcar/intranet/admin/phpobjectjs/';
@@ -18,6 +20,11 @@
     compilerSukLm = '../suzuki/suzuki-lopez-mateos-new/phpobjectjs/';
     compilerSukColima = '../suzuki/suzuki-colima-new/phpobjectjs/';
     compilerSukMorelia = '../suzuki/suzuki-morelia-new/phpobjectjs/';
+    compilerLDR = '../landrover/phpobjectjs/';
+    compilerLDRv2 = '../landrover.v2/phpobjectjs/';
+    compilerJaguar = '../jaguar/phpobjectjs/';
+    compilerJaguarv2 = '../jaguar.v2/phpobjectjs/';
+
     var compiler_phpobjectjs_method = {
         proCamcarV1Sitio: function(event) {
             event.preventDefault();
@@ -272,6 +279,86 @@
             COR.appendMulti('#compiler', dataProSukMoreliaAttributes);
             $.ajax({
                 url: compilerSukMorelia,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proLandRover: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-landrover', dataProjects);
+            dataProLandRoverAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProLandRoverAttributes);
+            $.ajax({
+                url: compilerLDR,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proLandRoverV2: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-landrover-v2', dataProjects);
+            dataProLandRoverV2Attributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProLandRoverV2Attributes);
+            $.ajax({
+                url: compilerLDRv2,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proJaguar: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-landrover', dataProjects);
+            dataProJaguarAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProJaguarAttributes);
+            $.ajax({
+                url: compilerJaguar,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proJaguarV2: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COR.appendMulti('#main-compiler-jaguar-v2', dataProjects);
+            dataProJaguarV2Attributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COR.appendMulti('#compiler', dataProJaguarV2Attributes);
+            $.ajax({
+                url: compilerJaguarv2,
                 type: 'post',
                 data: {ihidden: ihidden},
                 beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
