@@ -392,20 +392,44 @@
         }
     }
 /* ------------------------------------------------------ *\
+    [Methods] viewSectionSiteNavbarMethod
+\* ------------------------------------------------------ */
+    var viewSectionSiteNavbarMethod = {
+        viewSectionSiteNavbar: function() {
+            viewSectionSiteNavbarMethod.loadTemplateSiteNavigation();
+        },
+        loadTemplateSiteNavigation: function() {
+            COM.loadTemplate('tmp_site_navbar', '#content-temporal-interactive-site-navbar');
+        }
+    }
+/* ------------------------------------------------------ *\
     [Methods] viewSectionHomeMethod
 \* ------------------------------------------------------ */
     var viewSectionHomeMethod = {
         loadTemplatesSectionHome: function() {
-            var nameproject;
-            nameproject = projectsData.name;
-            $('#label-name-project').html(nameproject);
+            //var nameproject;
+            //nameproject = projectsData.name;
+            //$('#label-name-project').html(nameproject);
             COM.loadTemplate(tempsNames.app_thecompiler, domEl._main_compiler_app_name);
         },
         recurrentSecionHome: function() {
             dataMainCompilerProjectsAttributes = [
-                ['div', {'id':domEl._main_compiler_app, 'class':''}, '', 1]
+                ['div', {'id':domEl._main_compiler_app, 'class':'page animsition'}, '', 1]
             ];
             COM.appendMulti(domEl.div_recurrent, dataMainCompilerProjectsAttributes);
+            $(domEl._main_compiler_app_name).attr('style','animation-duration: 0.8s; opacity: 1;');
+        },
+        addStylesHome: function() {
+            dataStylesAttributes = [
+                ['link', {'class':'style-head', 'rel':'stylesheet', 'href':'css/styles/assets/pages/apps/documents.css'}, '', 0]
+            ];
+            COM.appendMulti('head', dataStylesAttributes);
+        },
+        addPluginsHome: function() {
+            dataPluginsAttributes = [
+                ['script', {'class':'data-plugins', 'src':'lib/assets/plugins/matchheight/jquery.matchHeight-min.js'}, '', 1]
+            ];
+            COM.appendMulti('#plugins-for-this-section', dataPluginsAttributes);
         },
         viewSectionHome: function() {
             viewSectionHomeMethod.recurrentSecionHome();

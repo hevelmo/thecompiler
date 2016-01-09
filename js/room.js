@@ -6,10 +6,13 @@
             // Add favicon
             //window.onload = favicon.load_favicon();
             section = "home";
+            Breakpoints();
+            //Site.run();
+            viewSectionHomeMethod.addStylesHome();
         },
         load: function(bindings) {
-            //addText.addTexto();
-            //viewSectionHomeMethod.viewSectionHome();
+            viewSectionSiteNavbarMethod.viewSectionSiteNavbar();
+            viewSectionHomeMethod.viewSectionHome();
         },
         unload: function(bindings) {
             section = "";
