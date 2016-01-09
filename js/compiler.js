@@ -31,12 +31,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-camcar-v1-sitio', dataProjects);
+            COM.appendMulti('#main-compiler-camcar-v1-sitio', dataProjects);
             dataProCamcarV1SitioAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProCamcarV1SitioAttributes);
+            COM.appendMulti('#compiler', dataProCamcarV1SitioAttributes);
             $.ajax({
                 url: compilerCamcar_v1_sitio,
                 type: 'post',
@@ -51,12 +51,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-camcar-v1-intranet', dataProjects);
+            COM.appendMulti('#main-compiler-camcar-v1-intranet', dataProjects);
             dataProCamcarV1IntranetAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProCamcarV1IntranetAttributes);
+            COM.appendMulti('#compiler', dataProCamcarV1IntranetAttributes);
             $.ajax({
                 url: compilerCamcar_v1_intranet,
                 type: 'post',
@@ -71,12 +71,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-camcar-v1-admin', dataProjects);
+            COM.appendMulti('#main-compiler-camcar-v1-admin', dataProjects);
             dataProCamcarV1AdminAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProCamcarV1AdminAttributes);
+            COM.appendMulti('#compiler', dataProCamcarV1AdminAttributes);
             $.ajax({
                 url: compilerCamcar_v1_admin,
                 type: 'post',
@@ -91,12 +91,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-camcar-v2', dataProjects);
+            COM.appendMulti('#main-compiler-camcar-v2', dataProjects);
             dataProCamcarV2SitioAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProCamcarV2SitioAttributes);
+            COM.appendMulti('#compiler', dataProCamcarV2SitioAttributes);
             $.ajax({
                 url: compilerCamcar_v2_sitio,
                 type: 'post',
@@ -111,12 +111,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-camcar-v2-intranet', dataProjects);
+            COM.appendMulti('#main-compiler-camcar-v2-intranet', dataProjects);
             dataProCamcarV2IntranetAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProCamcarV2IntranetAttributes);
+            COM.appendMulti('#compiler', dataProCamcarV2IntranetAttributes);
             $.ajax({
                 url: compilerCamcar_v2_intranet,
                 type: 'post',
@@ -131,12 +131,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-camcar-v2-admin', dataProjects);
+            COM.appendMulti('#main-compiler-camcar-v2-admin', dataProjects);
             dataProCamcarV2AdminAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProCamcarV2AdminAttributes);
+            COM.appendMulti('#compiler', dataProCamcarV2AdminAttributes);
             $.ajax({
                 url: compilerCamcar_v2_admin,
                 type: 'post',
@@ -151,12 +151,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-eurolimpio', dataProjects);
+            COM.appendMulti('#main-compiler-eurolimpio', dataProjects);
             dataProEurolimpioAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProEurolimpioAttributes);
+            COM.appendMulti('#compiler', dataProEurolimpioAttributes);
             $.ajax({
                 url: compilerEurolimpio,
                 type: 'post',
@@ -171,12 +171,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-tamizgen', dataProjects);
+            COM.appendMulti('#main-compiler-tamizgen', dataProjects);
             dataProTamizgenAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProTamizgenAttributes);
+            COM.appendMulti('#compiler', dataProTamizgenAttributes);
             $.ajax({
                 url: compilerTamizgen,
                 type: 'post',
@@ -191,12 +191,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-sukgdl', dataProjects);
+            COM.appendMulti('#main-compiler-sukgdl', dataProjects);
             dataProSukGdlAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProSukGdlAttributes);
+            COM.appendMulti('#compiler', dataProSukGdlAttributes);
             $.ajax({
                 url: compilerSukGdl,
                 type: 'post',
@@ -211,12 +211,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-sukvallarta', dataProjects);
+            COM.appendMulti('#main-compiler-sukvallarta', dataProjects);
             dataProSukVallartaAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProSukVallartaAttributes);
+            COM.appendMulti('#compiler', dataProSukVallartaAttributes);
             $.ajax({
                 url: compilerSukVallarta,
                 type: 'post',
@@ -231,12 +231,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-suklm', dataProjects);
+            COM.appendMulti('#main-compiler-suklm', dataProjects);
             dataProSukLmAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProSukLmAttributes);
+            COM.appendMulti('#compiler', dataProSukLmAttributes);
             $.ajax({
                 url: compilerSukLm,
                 type: 'post',
@@ -251,12 +251,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-sukcolima', dataProjects);
+            COM.appendMulti('#main-compiler-sukcolima', dataProjects);
             dataProSukColimaAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProSukColimaAttributes);
+            COM.appendMulti('#compiler', dataProSukColimaAttributes);
             $.ajax({
                 url: compilerSukColima,
                 type: 'post',
@@ -271,12 +271,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-sukmorelia', dataProjects);
+            COM.appendMulti('#main-compiler-sukmorelia', dataProjects);
             dataProSukMoreliaAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProSukMoreliaAttributes);
+            COM.appendMulti('#compiler', dataProSukMoreliaAttributes);
             $.ajax({
                 url: compilerSukMorelia,
                 type: 'post',
@@ -291,12 +291,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-landrover', dataProjects);
+            COM.appendMulti('#main-compiler-landrover', dataProjects);
             dataProLandRoverAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProLandRoverAttributes);
+            COM.appendMulti('#compiler', dataProLandRoverAttributes);
             $.ajax({
                 url: compilerLDR,
                 type: 'post',
@@ -311,12 +311,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-landrover-v2', dataProjects);
+            COM.appendMulti('#main-compiler-landrover-v2', dataProjects);
             dataProLandRoverV2Attributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProLandRoverV2Attributes);
+            COM.appendMulti('#compiler', dataProLandRoverV2Attributes);
             $.ajax({
                 url: compilerLDRv2,
                 type: 'post',
@@ -331,12 +331,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-landrover', dataProjects);
+            COM.appendMulti('#main-compiler-landrover', dataProjects);
             dataProJaguarAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProJaguarAttributes);
+            COM.appendMulti('#compiler', dataProJaguarAttributes);
             $.ajax({
                 url: compilerJaguar,
                 type: 'post',
@@ -351,12 +351,12 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COR.appendMulti('#main-compiler-jaguar-v2', dataProjects);
+            COM.appendMulti('#main-compiler-jaguar-v2', dataProjects);
             dataProJaguarV2Attributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COR.appendMulti('#compiler', dataProJaguarV2Attributes);
+            COM.appendMulti('#compiler', dataProJaguarV2Attributes);
             $.ajax({
                 url: compilerJaguarv2,
                 type: 'post',

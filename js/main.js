@@ -41,5 +41,9 @@ $(document).ready(function() {
     $('body').on('click', '#main-compiler-suklm form', compiler_phpobjectjs_method.proSukLm);
     $('body').on('click', '#main-compiler-sukcolima form', compiler_phpobjectjs_method.proSukColima);
     $('body').on('click', '#main-compiler-sukmorelia form', compiler_phpobjectjs_method.proSukMorelia);
+    $('body').on('click', '#main-compiler-landrover form', compiler_phpobjectjs_method.proLandRover);
+    $('body').on('click', '#main-compiler-landrover-v2 form', compiler_phpobjectjs_method.proLandRoverV2);
+    $('body').on('click', '#main-compiler-jaguar form', compiler_phpobjectjs_method.proJaguar);
+    $('body').on('click', '#main-compiler-jaguar-v2 form', compiler_phpobjectjs_method.proJaguarV2);
 
 });
