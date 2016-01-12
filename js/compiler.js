@@ -29,12 +29,12 @@
         proCamcarV1Sitio: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-camcar-v1-sitio', dataProjects);
             dataProCamcarV1SitioAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProCamcarV1SitioAttributes);
             $.ajax({
@@ -49,12 +49,12 @@
         proCamcarV1Intranet: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-camcar-v1-intranet', dataProjects);
             dataProCamcarV1IntranetAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProCamcarV1IntranetAttributes);
             $.ajax({
@@ -69,12 +69,12 @@
         proCamcarV1Admin: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-camcar-v1-admin', dataProjects);
             dataProCamcarV1AdminAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProCamcarV1AdminAttributes);
             $.ajax({
@@ -89,12 +89,12 @@
         proCamcarV2Sitio: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-camcar-v2', dataProjects);
             dataProCamcarV2SitioAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProCamcarV2SitioAttributes);
             $.ajax({
@@ -109,12 +109,12 @@
         proCamcarV2Intranet: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-camcar-v2-intranet', dataProjects);
             dataProCamcarV2IntranetAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProCamcarV2IntranetAttributes);
             $.ajax({
@@ -129,12 +129,12 @@
         proCamcarV2Admin: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-camcar-v2-admin', dataProjects);
             dataProCamcarV2AdminAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProCamcarV2AdminAttributes);
             $.ajax({
@@ -149,12 +149,12 @@
         proEuroLimpio: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-eurolimpio', dataProjects);
             dataProEurolimpioAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProEurolimpioAttributes);
             $.ajax({
@@ -169,12 +169,12 @@
         proTamizgen: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-tamizgen', dataProjects);
             dataProTamizgenAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProTamizgenAttributes);
             $.ajax({
@@ -189,12 +189,12 @@
         proSukGdl: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-sukgdl', dataProjects);
             dataProSukGdlAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProSukGdlAttributes);
             $.ajax({
@@ -209,12 +209,12 @@
         proSukVallarta: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-sukvallarta', dataProjects);
             dataProSukVallartaAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProSukVallartaAttributes);
             $.ajax({
@@ -229,12 +229,12 @@
         proSukLm: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-suklm', dataProjects);
             dataProSukLmAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProSukLmAttributes);
             $.ajax({
@@ -249,12 +249,12 @@
         proSukColima: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-sukcolima', dataProjects);
             dataProSukColimaAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProSukColimaAttributes);
             $.ajax({
@@ -269,12 +269,12 @@
         proSukMorelia: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-sukmorelia', dataProjects);
             dataProSukMoreliaAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProSukMoreliaAttributes);
             $.ajax({
@@ -289,12 +289,12 @@
         proLandRover: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-landrover', dataProjects);
             dataProLandRoverAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProLandRoverAttributes);
             $.ajax({
@@ -309,12 +309,12 @@
         proLandRoverV2: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-landrover-v2', dataProjects);
             dataProLandRoverV2Attributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProLandRoverV2Attributes);
             $.ajax({
@@ -329,12 +329,12 @@
         proJaguar: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-landrover', dataProjects);
             dataProJaguarAttributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProJaguarAttributes);
             $.ajax({
@@ -349,12 +349,12 @@
         proJaguarV2: function(event) {
             event.preventDefault();
             dataProjects = [
-                ['div', {'id':'compiler'}, '', 1],
-            ]
+                ['div', {'id':'compiler'}, '', 1]
+            ];
             COM.appendMulti('#main-compiler-jaguar-v2', dataProjects);
             dataProJaguarV2Attributes = [
                 ['div', {'id':'status'}, '', 1],
-                ['div', {'id':'data'}, '', 1],
+                ['div', {'id':'data'}, '', 1]
             ];
             COM.appendMulti('#compiler', dataProJaguarV2Attributes);
             $.ajax({

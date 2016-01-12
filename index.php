@@ -173,8 +173,8 @@
         <label for="">Land Rover V2</label>
         <div id="main-compiler-landrover-v2">
             <form name="form-compiler" method="post" accept-charset="utf-8">
-                <input type="hidden" name="execute_site_landrover-v2" value="execute">
-                <input type="submit" name="execute_site_landrover-v2" id="compilerLandRoverV2" value="Compilar">
+                <input type="hidden" name="execute_site_landrover_v2" value="execute">
+                <input type="submit" name="execute_site_landrover_v2" id="compilerLandRoverV2" value="Compilar">
             </form>
         </div>
         <br>
