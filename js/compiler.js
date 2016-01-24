@@ -5,7 +5,7 @@
         compilerCamcar_v2_sitio, compilerCamcar_v2_intranet, compilerCamcar_v2_admin,
         compilerEurolimpio, compilerTamizgen,
         compilerSukGdl, compilerSukVallarta, compilerSukLm, compilerSukColima, compilerSukMorelia,
-        compilerLDR, compilerLDRv2, compilerJaguar, compilerJaguarv2,
+        compilerLDR, compilerLDRv2, compilerJaguar, compilerJaguarv2, compilerVWGDL,
         ihidden;
     compilerCamcar_v1_sitio = '../camcar/sitio/phpobjectjs/';
     compilerCamcar_v1_intranet = '../camcar/intranet/phpobjectjs/';
@@ -24,6 +24,7 @@
     compilerLDRv2 = '../landrover.v2/phpobjectjs/';
     compilerJaguar = '../jaguar/phpobjectjs/';
     compilerJaguarv2 = '../jaguar.v2/phpobjectjs/';
+    compilerVWGDL = '../landingvolkswagen/phpobjectjs/';
 
     var compiler_phpobjectjs_method = {
         proCamcarV1Sitio: function(event) {
@@ -331,7 +332,7 @@
             dataProjects = [
                 ['div', {'id':'compiler'}, '', 1],
             ]
-            COM.appendMulti('#main-compiler-landrover', dataProjects);
+            COM.appendMulti('#main-compiler-jaguar', dataProjects);
             dataProJaguarAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
@@ -359,6 +360,26 @@
             COM.appendMulti('#compiler', dataProJaguarV2Attributes);
             $.ajax({
                 url: compilerJaguarv2,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proVWGDL: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COM.appendMulti('#main-compiler-vwgdl', dataProjects);
+            dataProVWGDLttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COM.appendMulti('#compiler', dataProVWGDLttributes);
+            $.ajax({
+                url: compilerVWGDL,
                 type: 'post',
                 data: {ihidden: ihidden},
                 beforeSend: compiler_phpobjectjs_method.funcBeforeSend()

@@ -45,5 +45,6 @@ $(document).ready(function() {
     $('body').on('click', '#main-compiler-landrover-v2 form', compiler_phpobjectjs_method.proLandRoverV2);
     $('body').on('click', '#main-compiler-jaguar form', compiler_phpobjectjs_method.proJaguar);
     $('body').on('click', '#main-compiler-jaguar-v2 form', compiler_phpobjectjs_method.proJaguarV2);
+    $('body').on('click', '#main-compiler-vwgdl form', compiler_phpobjectjs_method.proVWGDL);
 
 });
