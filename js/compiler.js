@@ -5,7 +5,7 @@
         compilerCamcar_v2_sitio, compilerCamcar_v2_intranet, compilerCamcar_v2_admin,
         compilerEurolimpio, compilerTamizgen,
         compilerSukGdl, compilerSukVallarta, compilerSukLm, compilerSukColima, compilerSukMorelia,
-        compilerLDR, compilerLDRv2, compilerJaguar, compilerJaguarv2, compilerVWGDL,
+        compilerLDR, compilerLDRv2, compilerJaguar, compilerJaguarv2, compilerVWGDL, compilerDirectExpress,
         ihidden;
     compilerCamcar_v1_sitio = '../camcar/sitio/phpobjectjs/';
     compilerCamcar_v1_intranet = '../camcar/intranet/phpobjectjs/';
@@ -25,6 +25,7 @@
     compilerJaguar = '../jaguar/phpobjectjs/';
     compilerJaguarv2 = '../jaguar.v2/phpobjectjs/';
     compilerVWGDL = '../landingvolkswagen/phpobjectjs/';
+    compilerDirectExpress = '../directexpress/phpobjectjs/';
 
     var compiler_phpobjectjs_method = {
         proCamcarV1Sitio: function(event) {
@@ -380,6 +381,26 @@
             COM.appendMulti('#compiler', dataProVWGDLttributes);
             $.ajax({
                 url: compilerVWGDL,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proDirectExpress: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COM.appendMulti('#main-compiler-directexpress', dataProjects);
+            dataProDirectExpressttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COM.appendMulti('#compiler', dataProDirectExpressttributes);
+            $.ajax({
+                url: compilerDirectExpress,
                 type: 'post',
                 data: {ihidden: ihidden},
                 beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
