@@ -410,11 +410,11 @@
         },
         funcBeforeSend: function() {
             $('#status').html('<img src="img/loading.gif" />');
-            $('#data').html('Compilando: phpobjectjs');
+            $('#data').html('Procesando');
         },
         funcDone: function() {
             setTimeout(function() {
-                $('#data').html('<i class="icon ion-md-checkmark"></i> compilado: phpobjectjs');
+                $('#data').html('<i class="icon ion-md-checkmark"></i> correcto.');
                 setTimeout(function() {
                     $('#compiler').remove();
                 }, 4100);
