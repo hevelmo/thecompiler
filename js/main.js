@@ -48,5 +48,6 @@ $(document).ready(function() {
     $('body').on('click', '#main-compiler-jaguar-v2 form', compiler_phpobjectjs_method.proJaguarV2);
     $('body').on('click', '#main-compiler-vwgdl form', compiler_phpobjectjs_method.proVWGDL);
     $('body').on('click', '#main-compiler-directexpress form', compiler_phpobjectjs_method.proDirectExpress);
+    $('body').on('click', '#main-compiler-viajeroseguro form', compiler_phpobjectjs_method.proViajeroSeguro);
 
 });

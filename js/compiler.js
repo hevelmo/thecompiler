@@ -6,6 +6,7 @@
         compilerEurolimpio, compilerTamizgen,
         compilerSukGdl, compilerSukVallarta, compilerSukLm, compilerSukColima, compilerSukMorelia,
         compilerLDR, compilerLDRv2, compilerJaguar, compilerJaguarv2, compilerVWGDL, compilerDirectExpress,
+        compilerViajeroSeguro,
         ihidden;
     compilerBBI = '../bigbang-admin/phpobjectjs/';
     compilerCamcar_v1_sitio = '../camcar/sitio/phpobjectjs/';
@@ -27,6 +28,7 @@
     compilerJaguarv2 = '../jaguar.v2/phpobjectjs/';
     compilerVWGDL = '../landingvolkswagen/phpobjectjs/';
     compilerDirectExpress = '../directexpress/phpobjectjs/';
+    compilerViajeroSeguro = '../viajeroseguro/phpobjectjs/';
 
     var compiler_phpobjectjs_method = {
         proBigBangAdmin: function(event) {
@@ -395,11 +397,11 @@
                 ['div', {'id':'compiler'}, '', 1],
             ]
             COM.appendMulti('#main-compiler-vwgdl', dataProjects);
-            dataProVWGDLttributes = [
+            dataProVWGDLAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COM.appendMulti('#compiler', dataProVWGDLttributes);
+            COM.appendMulti('#compiler', dataProVWGDLAttributes);
             $.ajax({
                 url: compilerVWGDL,
                 type: 'post',
@@ -415,13 +417,33 @@
                 ['div', {'id':'compiler'}, '', 1],
             ]
             COM.appendMulti('#main-compiler-directexpress', dataProjects);
-            dataProDirectExpressttributes = [
+            dataProDirectExpressAttributes = [
                 ['div', {'id':'status'}, '', 1],
                 ['div', {'id':'data'}, '', 1],
             ];
-            COM.appendMulti('#compiler', dataProDirectExpressttributes);
+            COM.appendMulti('#compiler', dataProDirectExpressAttributes);
             $.ajax({
                 url: compilerDirectExpress,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proViajeroSeguro: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COM.appendMulti('#main-compiler-viajeroseguro', dataProjects);
+            dataProViajeroSeguroAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COM.appendMulti('#compiler', dataProViajeroSeguroAttributes);
+            $.ajax({
+                url: compilerViajeroSeguro,
                 type: 'post',
                 data: {ihidden: ihidden},
                 beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
