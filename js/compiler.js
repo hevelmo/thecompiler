@@ -1,12 +1,13 @@
 /* ------------------------------------------------------ *\
  [Methods] compiler_phpobjectjs_method
 \* ------------------------------------------------------ */
-    var compilerCamcar_v1_sitio, compilerCamcar_v1_intranet, compilerCamcar_v1_admin,
+    var compilerBBI, compilerCamcar_v1_sitio, compilerCamcar_v1_intranet, compilerCamcar_v1_admin,
         compilerCamcar_v2_sitio, compilerCamcar_v2_intranet, compilerCamcar_v2_admin,
         compilerEurolimpio, compilerTamizgen,
         compilerSukGdl, compilerSukVallarta, compilerSukLm, compilerSukColima, compilerSukMorelia,
         compilerLDR, compilerLDRv2, compilerJaguar, compilerJaguarv2, compilerVWGDL, compilerDirectExpress,
         ihidden;
+    compilerBBI = '../bigbang-admin/phpobjectjs/';
     compilerCamcar_v1_sitio = '../camcar/sitio/phpobjectjs/';
     compilerCamcar_v1_intranet = '../camcar/intranet/phpobjectjs/';
     compilerCamcar_v1_admin = '../camcar/intranet/admin/phpobjectjs/';
@@ -28,6 +29,26 @@
     compilerDirectExpress = '../directexpress/phpobjectjs/';
 
     var compiler_phpobjectjs_method = {
+        proBigBangAdmin: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COM.appendMulti('#main-compiler-bigbang-admin', dataProjects);
+            dataBBIAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COM.appendMulti('#compiler', dataBBIAttributes);
+            $.ajax({
+                url: compilerBBI,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
         proCamcarV1Sitio: function(event) {
             event.preventDefault();
             dataProjects = [
