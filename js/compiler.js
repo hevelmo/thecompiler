@@ -6,7 +6,7 @@
         compilerEurolimpio, compilerTamizgen,
         compilerSukGdl, compilerSukVallarta, compilerSukLm, compilerSukColima, compilerSukMorelia,
         compilerLDR, compilerLDRv2, compilerJaguar, compilerJaguarv2, compilerVWGDL, compilerDirectExpress,
-        compilerViajeroSeguro,
+        compilerViajeroSeguro, compilerViajeroSeguroInt,
         ihidden;
     compilerBBI = '../bigbang-admin/phpobjectjs/';
     compilerCamcar_v1_sitio = '../camcar/sitio/phpobjectjs/';
@@ -29,6 +29,7 @@
     compilerVWGDL = '../landingvolkswagen/phpobjectjs/';
     compilerDirectExpress = '../directexpress/phpobjectjs/';
     compilerViajeroSeguro = '../viajeroseguro/phpobjectjs/';
+    compilerViajeroSeguroInt = '../viajeroseguro/intranet/phpobjectjs/';
 
     var compiler_phpobjectjs_method = {
         proBigBangAdmin: function(event) {
@@ -444,6 +445,26 @@
             COM.appendMulti('#compiler', dataProViajeroSeguroAttributes);
             $.ajax({
                 url: compilerViajeroSeguro,
+                type: 'post',
+                data: {ihidden: ihidden},
+                beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
+            })
+            .done(compiler_phpobjectjs_method.funcDone)
+            .always(compiler_phpobjectjs_method.funcAlways)
+        },
+        proViajeroSeguroInt: function(event) {
+            event.preventDefault();
+            dataProjects = [
+                ['div', {'id':'compiler'}, '', 1],
+            ]
+            COM.appendMulti('#main-compiler-viajeroseguro-int', dataProjects);
+            dataProViajeroSeguroIntAttributes = [
+                ['div', {'id':'status'}, '', 1],
+                ['div', {'id':'data'}, '', 1],
+            ];
+            COM.appendMulti('#compiler', dataProViajeroSeguroIntAttributes);
+            $.ajax({
+                url: compilerViajeroSeguroInt,
                 type: 'post',
                 data: {ihidden: ihidden},
                 beforeSend: compiler_phpobjectjs_method.funcBeforeSend()
