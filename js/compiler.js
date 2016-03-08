@@ -1,6 +1,12 @@
 /* ------------------------------------------------------ *\
  [Methods] compiler_phpobjectjs_method
 \* ------------------------------------------------------ */
+    /*var projects, compilers, local_projects, data_project;
+
+    projects = Array(
+        'bigbang-admin', 'camcar',
+    );
+    console.log(projects);*/
     var compilerBBI, compilerCamcar_v1_sitio, compilerCamcar_v1_intranet, compilerCamcar_v1_admin,
         compilerCamcar_v2_sitio, compilerCamcar_v2_intranet, compilerCamcar_v2_admin,
         compilerEurolimpio, compilerTamizgen,
